@@ -1,0 +1,110 @@
+<!-- Modal window -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-btn" type="button" data-modal-close>
+      <svg class="modal-btn-icon" width="8" height="8">
+        <use href="../img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal-cta">Leave your contacts and we will call you back</p>
+
+    <form class="modal-form" name="contacts" autocomplete="off">
+      <div class="contacts-form-wrapper">
+        <label class="contacts-form-label" for="user_name">Name</label>
+        <div class="contacts-form-field">
+          <input
+            class="contacts-form-input"
+            type="text"
+            name="user_name"
+            id="user_name"
+            placeholder="&nbsp;"
+            minlength="3"
+            required
+          />
+          <svg class="contacts-form-icon" width="18" height="18">
+            <use href="../img/sprite.svg#icon-person"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="contacts-form-wrapper">
+        <label class="contacts-form-label" for="user_phone">
+          Phone number
+        </label>
+        <div class="contacts-form-field">
+          <input
+            class="contacts-form-input"
+            type="tel"
+            name="user_phone"
+            id="user_phone"
+            placeholder=""
+            minlength="17"
+            maxlength="17"
+          />
+          <svg class="contacts-form-icon" width="18" height="24">
+            <use href="../img/sprite.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="contacts-form-wrapper">
+        <label class="contacts-form-label" for="user_email">Email</label>
+        <div class="contacts-form-field">
+          <input
+            class="contacts-form-input"
+            type="email"
+            name="user_email"
+            id="user_email"
+            required
+            pattern="[a-zA-Z\S]+@[a-zA-Z\S]+\.[a-z]{2,3}$"
+            title="Email must contain domen"
+          />
+          <svg class="contacts-form-icon" width="18" height="24">
+            <use href="../img/sprite.svg#icon-mail-box"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="contacts-form-wrapper">
+        <label class="contacts-form-label" for="user_msg">Comment</label>
+        <textarea
+          class="contacts-form-message"
+          name="user_msg"
+          id="user_msg"
+          rows="4"
+          placeholder="Text input"
+          minlength="10"
+          required
+        ></textarea>
+      </div>
+
+      <div class="review-form-agreement">
+        <input
+          class="visually-hidden"
+          type="checkbox"
+          name="user_agreement"
+          id="user_agreement"
+          value="false"
+        />
+        <label class="review-form-agreement-desc" for="user_agreement">
+          <span class="review-form-checkbox">
+            <svg class="review-form-checkbox-icon" width="10" height="8">
+              <use href="../img/sprite.svg#icon-check-in"></use>
+            </svg>
+          </span>
+          I accept the terms and conditions of the
+          <a
+            class="review-form-agreement-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+        </label>
+      </div>
+
+      <button class="button btn-accent" type="submit">Send</button>
+    </form>
+  </div>
+</div>

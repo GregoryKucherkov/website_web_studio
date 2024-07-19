@@ -1,0 +1,16 @@
+:root {
+    --primary-font: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+    --navy-bl: rgb(46, 47, 66);
+    --navy-bl-md: rgb(46, 47, 66);
+    --clr-iris: rgb(77, 90, 229);
+    --clr-slate: rgb(67, 68, 85);
+    --clr-light-slate: rgb(142, 143, 153);
+    --clr-cloud: rgb(244, 244, 253);
+    --clr-white: rgb(255, 255, 255);
+    --clr-mdl-bck: rgb(252, 252, 252);
+    --clr-ocean: rgb(64, 75, 191);
+    --clr-cornflower: rgb(231, 233, 252);
+    --clr-grey: rgb(46, 47, 66);
+    --clr-green: rgb(49, 208, 170);
+}

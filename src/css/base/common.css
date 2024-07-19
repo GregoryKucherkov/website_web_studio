@@ -1,0 +1,115 @@
+body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-bl);
+    background-color: var(--clr-white);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+button {
+    font-family: inherit;
+    color: var(--clr-iris);
+    background-color: var(--clr-cloud);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+}
+
+a {
+    color: var(--navy-bl);
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ .container {
+    min-width: 320px;
+    max-width: 428px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+ /* Tablets */
+ @media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 16px;
+    }
+ }
+
+ /* Desktop  */
+ @media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+ }
+
+ .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 48px;
+    gap: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    .buttons {
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .buttons {
+        margin-bottom: 72px;
+    }
+}
+
+.btn-itms-smpl {
+    padding: 12px 24px;
+    border: 1px solid var(--clr-cornflower);
+    border-radius: 4px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-itms-smpl:hover,
+.btn-itms-smpl:focus {
+    background-color: var(--clr-ocean);
+    color: var(--clr-white);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+
