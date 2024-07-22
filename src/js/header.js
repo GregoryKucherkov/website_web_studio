@@ -3,7 +3,11 @@ const linkPortfolio = document.querySelector('[data-link-portfolio]');
 const linkContacts = document.querySelector('[data-link-contacts]');
 
 const onChangeCurrentLink = () => {
-  const currentPath = window.location.pathname;
+  // const currentPath = window.location.pathname;
+
+  const basePath = '/expl_web_studio';
+  const fullPath = window.location.pathname; // "/expl_web_studio/portfolio.html"
+  const currentPath = fullPath.replace(basePath, '').toLowerCase(); // "portfolio.html"
 
   const currentLink = document.querySelectorAll('.current');
 
@@ -12,13 +16,13 @@ const onChangeCurrentLink = () => {
   }
 
   switch (true) {
-    case currentPath.includes('studio'):
+    case currentPath.endsWith('studio.html'):
       linkHome.classList.add('current');
       break;
-    case currentPath.includes('portfolio'):
+    case currentPath.endsWith('portfolio.html'):
       linkPortfolio.classList.add('current');
       break;
-    case currentPath.includes('contacts'):
+    case currentPath.endsWith('contacts.html'):
       linkContacts.classList.add('current');
       break;
     default:

@@ -1,18 +1,19 @@
 {
-  "name": "vanilla-app-template",
+  "name": "expl_web_studio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/website_web_studio/",
+    "build": "vite build --base=/expl_web_studio/",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.5.2",
-    "glob": "^8.1.0"
+    "gh-pages": "^6.1.1",
+    "glob": "^8.1.0",
+    "vite": "^4.5.2"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Gregory Kucherkov <kucherkovpromotion@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
